@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contadores de caracteres</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+
+    function contarCaracteres(objeto){
+    document.getElementById("charNum").innerHTML = objeto.value.length+' characters';
+    }
+
+    </script>
+</head>
+<body>
+
+    <h1> Contador de Caracteres</h1>
+    <p> Intruduce tu texto en el box. Abajo del mismo te dirá el recuento. 
+        Los caracteres en blanco se toman como caracter.</p>
+
+    <textarea name="mensaje" onkeyup="contarCaracteres(this);"></textarea>
+    <p id="charNum">0 Caracteres</p>
+
+    
+</body>
+</html>
